@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+    <title>ShishaShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section id="header">
+        <h1>ShishaShop</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="Index.html">Home</a></li>
+                <li><a class="active" href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contact</li>
+                <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="Images/BIG_2.jpg" width="100%" id="MainImg" alt="">
+        
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="Images/BIG_2.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="Images/BIG_21.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="Images/BIG_22.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="Images/BIG_23.jpg" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="single-pro-details">
+    <h6>Home/ Shishas</h6>
+    <h4>Branded Shisha</h4>
+    <h2>289лв</h2>
+    <input type="number" value="1">
+    <button class="btn btn1">Add To Cart</button>
+    <h4>Product Details</h4>
+    <span>Стъкленицата се пълни с течност, така че при потапянето на тръбата, най-ниският ѝ край да е на няколко сантиметра под нивото на течността. След това уплътнителят се закрепя здраво и херметически към стъкленицата. В чашката се поставя тютюн, така че да може през него да минава въздух и чашката се закрепя в горния край на тялото. Чашката над тютюна се покрива с алуминиево фолио, на което се правят няколко дупчици. След това върху него се поставят нагорещените въглени. Фолиото предпазва от вдишване на пепел от въглена и задържа топлината при тютюна.</span>
+</div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <h8>Summer Is Comming In Smoke</h8>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="Images/alpha_hookah_x.jpg" alt="">
+                <div class="des">
+                    <span>EL BANDIA</span>
+                    <h5>EL Bandia E92</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h4>289лв</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-shake" style="color: #2d9a2f;"></i></i></a>
+            </div>
+            <div class="pro">
+                <img src="Images/Big_5.jpg" alt="">
+                <div class="des">
+                    <span>MEXANICA</span>
+                    <h5>Mexanica STM B</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>169лв</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-shake" style="color: #2d9a2f;"></i></i></a>
+            </div>
+            <div class="pro">
+                <img src="Images/BIG_4.webp" alt="">
+                <div class="des">
+                    <span>EL BANDIA</span>
+                    <h5>EL BANDIA F50</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>319лв</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-shake" style="color: #2d9a2f;"></i></i></a>
+            </div>
+            <div class="pro">
+                <img src="Images/BIG_3.jpg" alt="">
+                <div class="des">
+                    <span>KAIF</span>
+                    <h5>Kaif Ocean S</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h4>179лв</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-shake" style="color: #2d9a2f;"></i></i></a>
+            </div>  
+        </div>
+    </section>
+    <script>
+        var MainImg=document.getElementById("MainImg");
+        var smallimg=document.getElementsByClassName("small-img");
+        smallimg[0].onclick=function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick=function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick=function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick=function(){
+            MainImg.src=smallimg[3].src;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
